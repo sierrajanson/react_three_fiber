@@ -1,21 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 html,
 body,
 #root {
+  overflow-y: hidden;
+  overflow-x: hidden;
   height: 100%;
   margin: 0;
   background: #000000;
 }
 
-#info {
-  position: absolute;
-  top: 10px;
-  right: 295px;
-  text-align: right;
-  background: #181c20;
-  color: #8c92a4;
-  padding: 7px 10px;
-  border-radius: 10px;
-  font-size: 17px;
-  pointer-events: none;
-  font-family: var(--leva-fonts-mono);
+h1{
+  color: white;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+  background-color: rgb(0, 255, 238);
+  height: 700px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.dog_holder{
+  position: relative;
+  height: 800px;
+}
+
+.death_screen h1{
+  color: #222;
+  font-weight:bolder;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+
+.death_screen h3{
+  margin-top: 0px;
+  font-size: 60px;
+  color: #ffffff;
+  font-family: "Luckiest Guy";
+  font-weight: 900;
+  letter-spacing: 0.00001cm;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #333;
+
+}
+.death_screen{
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./rainbow.png");
+}
+
+.sankie_surfs{
+  background-color: black;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./surfers.png");
+  background-size: 50%;
+}
+
+.play_link{
+  color: white;
+  text-decoration: none;
+  font-family: "Arial";
+  font-weight: 900;
+  rotate: 90px;
+  font-size: 30px;
+  top: 585px;
+  position:relative;
 }
