@@ -53,6 +53,11 @@ h1{
   background-image: url("./rainbow.png");
 }
 
+.death_screen a{
+  position: absolute;
+  top: 600px;
+  transform: translate(-50%, 0%);
+}
 .sankie_surfs{
   background-color: black;
   height: 800px;

@@ -1,21 +1,14 @@
 import Landing from './Landing.jsx';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Dog from './Dog';
-
+import Bear from './Bear';
 export default function App() {
-  // useEffect(() => {
-  //   document.addEventListener('keydown', detectKeyDown, true)},[])
-
-  // const detectKeyDown = (e) => {
-  //   console.log(e.key);
-  // }
 
   return (
     <>
       <Router>
         <Routes>
           <Route path='/' element={<Landing/>}/>
-          <Route path='/dog' element={<Dog/>}/>
+          <Route path='/bear' element={<Bear/>}/>
         </Routes>
      </Router>
     </>

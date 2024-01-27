@@ -2,20 +2,19 @@ import {useRef, useState, useEffect, Suspense} from "react";
 import {Canvas, useFrame, useLoader} from '@react-three/fiber';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader';
 
-const Road = () => {
-    const barrier = useLoader(GLTFLoader, './models/road.glb');
+const Road = (props) => {
+    const barrier = useLoader(GLTFLoader, props.glb);
     const b_ref = useRef();
     const [pos, setp] = useState(0);
     useFrame((state, delta) => { // maybe have var to check for 
         if (pos === 0){
-            b_ref.current.position.z = 8;
+            b_ref.current.position.z = props.start_x;
             setp(2);
         }
         b_ref.current.position.z -= 0.1;
         if (b_ref.current.position.z < -6){
             b_ref.current.position.z = 14.9;
-        }
-    })
+        }})
     return (
         <mesh
         ref={b_ref}
